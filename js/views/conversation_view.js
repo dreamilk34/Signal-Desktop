@@ -146,7 +146,6 @@
             'click .verify-identity': 'verifyIdentity',
             'click .view-members': 'viewMembers',
             'click .conversation-menu .hamburger': 'toggleMenu',
-            'click .openInbox' : 'openInbox',
             'click' : 'onClick',
             'click .bottom-bar': 'focusMessageField',
             'click .back': 'resetPanel',
@@ -410,10 +409,6 @@
                 var view = new Whisper.GroupMemberList({ model: this.model });
                 this.listenBack(view);
             }.bind(this));
-        },
-
-        openInbox: function() {
-            openInbox();
         },
 
         onClick: function(e) {
